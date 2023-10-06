@@ -31,7 +31,8 @@ jobs:
       with:
         push: true
         tags: nasasidekickapiregistry.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_82dd6335f6f544d5b8cdfbeb4435dbba }}/nasa-sidekick-api:${{ github.sha }}
-        file: ./Dockerfile
+        file: ./backend/Dockerfile
+        context: ./backend
 
   deploy:
     runs-on: ubuntu-latest
