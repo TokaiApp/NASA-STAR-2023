@@ -33,7 +33,7 @@ export default async function ChatPage({ params }: ChatPageProps) {
   const session = await auth()
 
   if (!session?.user) {
-    redirect(`/sign-in?next=/chat/${params.id}`)
+    redirect(`/sign-in?next=/openai/${params.id}`)
   }
 
   const chat = await getChat(params.id, session.user.id)

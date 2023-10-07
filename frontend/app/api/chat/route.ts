@@ -1,3 +1,4 @@
+/*
 import { kv } from '@vercel/kv'
 import { OpenAIStream, StreamingTextResponse } from 'ai'
 import { Configuration, OpenAIApi } from 'openai-edge'
@@ -64,4 +65,37 @@ export async function POST(req: Request) {
   })
 
   return new StreamingTextResponse(stream)
+}
+import { kv } from '@vercel/kv';
+import { OpenAIStream, StreamingTextResponse } from 'ai';
+
+import { auth } from '@/auth';
+import { nanoid } from '@/lib/utils';
+*/
+const qs = require('qs');
+export const runtime = 'edge';
+// @ts-ignore
+import { NextResponse } from 'next/server'
+
+export async function POST(req: Request) {
+  const json = await req.json()
+  const { messages, previewToken } = json
+  const user_request_message = messages[0].content
+
+  const res = await fetch('https://nasa-sidekick-api.azurewebsites.net/api/sidekick/chat', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'accept': 'application/json'
+    },
+    body: qs.stringify({
+      user_request:
+        user_request_message
+    })
+  })
+
+  const data = await res.json()
+  const result = data.result
+
+  return NextResponse.json(result)
 }
