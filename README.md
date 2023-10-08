@@ -14,7 +14,9 @@ https://nasa-star-2023.vercel.app/
 
 ![image](https://github.com/TokaiApp/NASA-STAR-2023/assets/96654161/b8fa9f8d-4926-437e-9fe1-1213d9c083c8)
 
-demo video : 
++ demo video : 
 
 https://github.com/TokaiApp/NASA-STAR-2023/assets/96654161/bcef69be-7ab9-432b-a76d-06f3a1d16fd9
 
++ Or you can watch it : 
+https://dragonnote-my.sharepoint.com/:v:/g/personal/seth_tokai_app/EeavzuqNwCxEpwJT83O0zd4BSJFTfPWNHvqPf9G7_VJLBw?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZyIsInJlZmVycmFsQXBwUGxhdGZvcm0iOiJXZWIiLCJyZWZlcnJhbE1vZGUiOiJ2aWV3In19&e=Zl9cv3
